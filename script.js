@@ -239,7 +239,7 @@ loader.load(MODEL_PATH, function(gltf) {
 
   theModel.traverse((o) => {
      if (o.isMesh) {
-       o.castShadow = true;
+       o.castShadow = false;
        o.receiveShadow = true;
      }
    });
